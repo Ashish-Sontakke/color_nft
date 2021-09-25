@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Color NFT</title>
+
+  <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+  <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+  <h1>Color NFT</h1>
+  <p>Create your own colors sell the colors and buy</p>
+
+  <br><label for="tokenId">put your nft id: </label><input type="text" id="tokenId">
+  
+  <label for="color_code">Put your color NFT: </label><input type="text" id="color_code"></input>
+  <button id="create" onclick="App.createNFT()">Create Color NFT</button>
+
+  <p>only put the hex string eg: 0xffffff</p>
+
+  <br><label for="get_info">NFT Id : </label><input type="text" id="get_info_from_id"></input>
+  <button id="getInfo" onclick="App.getInFo()">GET COLOR NFT from ID</button>
+  <span id="status"></span>
+  <br>
+  <br><label for="buy_token_id">NFT Id : </label><input type="text" id="buy_token"></input>
+  <button id="getInfo" onclick="App.buyColorNFT()">Buy Token</button>
+  <script src="index.js">
+  </script>
+</body>
+
+</html>
